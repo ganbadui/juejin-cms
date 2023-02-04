@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "acticle_tags",
+  "info": {
+    "singularName": "acticle-tag",
+    "pluralName": "acticle-tags",
+    "displayName": "ActicleTag"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tagName": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "acticles",
+  "info": {
+    "singularName": "acticle",
+    "pluralName": "acticles",
+    "displayName": "Acticle",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "acticle_tag": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::acticle-tag.acticle-tag"
+    },
+    "user_info": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::user-name.user-name"
+    }
+  }
+}

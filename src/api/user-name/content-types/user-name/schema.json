@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_names",
+  "info": {
+    "singularName": "user-name",
+    "pluralName": "user-names",
+    "displayName": "UserInfo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "occupation": {
+      "type": "text"
+    },
+    "introduce": {
+      "type": "text"
+    },
+    "user_name": {
+      "type": "string"
+    },
+    "author": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::acticle.acticle"
+    }
+  }
+}

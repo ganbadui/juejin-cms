@@ -8,7 +8,7 @@
 
 ### 地址： https://api.skyseek.top/admin
 
-### 首页获取所有文章： http://localhost:1338/api/acticles?fields=id,title,description&populate=\*
+### 首页获取所有文章： https://api.skyseek.top/api/acticles?fields=id,title,description&populate=\*
 
 ```json
 {
@@ -32,7 +32,7 @@
       }
 ```
 
-### 获取单个详情文章：http://localhost:1338/api/acticles?filters[id][$eqi]=${id}&populate=\*
+### 获取单个详情文章：https://api.skyseek.top/api/acticles?filters[id][$eqi]=${id}&populate=\*
 
     - ${id}为传入的id
 
@@ -65,7 +65,7 @@
 }
 ```
 
-### 获取当前文章的相关文章：http://localhost:1338/api/acticle-tags?filters[tagName][$eqi]=${tagName}&populate=\*&pagination[pageSize]=5
+### 获取当前文章的相关文章：https://api.skyseek.top/api/acticle-tags?filters[tagName][$eqi]=${tagName}&populate=\*&pagination[pageSize]=5
 
 - ${tagName}为传进来的 tagName
 - 最后的数字代表只拿 5 个
@@ -106,7 +106,7 @@
 
 ### 获取作者榜：https://api.skyseek.top/api/user-names
 
-### 文章 tag 栏：http://localhost:1338/api/acticle-tags
+### 文章 tag 栏：https://api.skyseek.top/api/acticle-tags
 
 ```json
 {
@@ -118,7 +118,7 @@
     },
 ```
 
-### 标签切换栏：http://localhost:1338/api/tags
+### 标签切换栏：https://api.skyseek.top/api/tags
 
 - isActive 为 true 时代表这个 tag 有角标
 
@@ -143,7 +143,7 @@
     },
 ```
 
-### 广告图片位：http://localhost:1338/api/ads?populate=\*
+### 广告图片位：https://api.skyseek.top/api/ads?populate=\*
 
     - 媒体文件第一个分辨率较低，第二个分辨率高
 
@@ -189,7 +189,7 @@
 }
 ```
 
-### 二维码图片：http://localhost:1338/api/qrs?populate=\*
+### 二维码图片：https://api.skyseek.top/api/qrs?populate=\*
 
     - 媒体文件第一个分辨率较低，第二个分辨率高
 

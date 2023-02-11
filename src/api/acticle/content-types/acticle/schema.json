@@ -23,13 +23,28 @@
     },
     "acticle_tag": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::acticle-tag.acticle-tag"
+      "relation": "manyToOne",
+      "target": "api::acticle-tag.acticle-tag",
+      "inversedBy": "acticles"
     },
     "user_info": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::user-name.user-name"
+    },
+    "time": {
+      "type": "date"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }

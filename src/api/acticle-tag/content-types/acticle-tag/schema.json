@@ -13,6 +13,12 @@
   "attributes": {
     "tagName": {
       "type": "string"
+    },
+    "acticles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::acticle.acticle",
+      "mappedBy": "acticle_tag"
     }
   }
 }

@@ -12,9 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "occupation": {
-      "type": "text"
-    },
     "introduce": {
       "type": "text"
     },
@@ -25,6 +22,16 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::acticle.acticle"
+    },
+    "headPicture": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }

@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "qrs",
+  "info": {
+    "singularName": "qr",
+    "pluralName": "qrs",
+    "displayName": "qr"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "QR_code_url": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

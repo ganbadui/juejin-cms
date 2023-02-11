@@ -30,3 +30,10 @@ node 版本 >= 16
 npm install
 npm run develop
 ```
+
+### 无法运行
+运行
+```
+npm run strapi install i18n
+
+```

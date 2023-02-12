@@ -265,3 +265,55 @@ npm run develop
 npm run strapi install i18n
 
 ```
+## 部署
+
+## 执行一下的步骤
+1. 安装 nginx
+2. 安装node.js
+3. 安装pm2
+
+### 首先 
+```
+git clone https://github.com/ganbadui/juejin-cms
+```
+
+### 安装
+```
+yarn i
+```
+### 在当前目录下创建 `server.js`
+```
+const strapi = require('@strapi/strapi');
+strapi().start();
+
+```
+
+### 使用pm2 运行
+
+```
+pm2 start ./server.js
+```
+### pm2常用命令
+```
+pm2 start
+pm2 log
+pm2 list
+
+```
+
+### centos7 部署错误解决方法
+```sh
+yum install -y centos-release-scl-rh 
+yum install -y centos-release-scl 
+
+安装gcc7 
+yum install devtoolset-7-gcc.x86_64 && yum install devtoolset-7-gcc-c++.x86_64
+
+
+---	启用
+scl enable devtoolset-7 bash
+
+
+--查看
+g++ --version
+```

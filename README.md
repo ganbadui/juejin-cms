@@ -8,7 +8,7 @@
 
 ### 地址： https://api.skyseek.top/admin
 
-### 首页获取所有文章： https://api.skyseek.top/api/acticles?fields=id,title,description&populate=*
+### 首页获取所有文章： [https://api.skyseek.top/api/acticles?fields=id,title,description,updatedAt&populate=*](https://api.skyseek.top/api/acticles?fields=id,title,description,updatedAt&populate=*)
 
 ```json
 {
